@@ -118,7 +118,9 @@ export default function NickStoneAudioSite() {
         {/* CONTACT */}
         <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
           <h2 className="text-3xl font-bold mb-8">Контакты</h2>
-          <form className="grid md:grid-cols-2 gap-6">
+          <form className="grid md:grid-cols-2 gap-6"
+           action="https://formspree.io/f/mldladow"
+  method="POST">
             <input type="text" placeholder="Имя" className="p-3 rounded bg-white/5 border border-white/10" />
             <input type="email" placeholder="Email" className="p-3 rounded bg-white/5 border border-white/10" />
             <textarea placeholder="Ваш проект" rows="4" className="md:col-span-2 p-3 rounded bg-white/5 border border-white/10"></textarea>
