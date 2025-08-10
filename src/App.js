@@ -116,17 +116,46 @@ export default function NickStoneAudioSite() {
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="max-w-7xl mx-auto px-6 py-20">
-          <h2 className="text-3xl font-bold mb-8">Контакты</h2>
-          <form className="grid md:grid-cols-2 gap-6"
-           action="https://formspree.io/f/mldladow"
-  method="POST">
-            <input type="text" placeholder="Имя" className="p-3 rounded bg-white/5 border border-white/10" />
-            <input type="email" placeholder="Email" className="p-3 rounded bg-white/5 border border-white/10" />
-            <textarea placeholder="Ваш проект" rows="4" className="md:col-span-2 p-3 rounded bg-white/5 border border-white/10"></textarea>
-            <button className="md:col-span-2 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-md font-medium">Отправить</button>
-          </form>
-        </section>
+    <section id="contact" className="bg-white/5 py-20">
+  <div className="max-w-3xl mx-auto px-6">
+    <h2 className="text-3xl font-bold mb-8">Связаться со мной</h2>
+    <form
+      action="https://formspree.io/f/mldladow"
+      method="POST"
+      className="space-y-6"
+    >
+      <div>
+        <label className="block mb-2 font-medium">Ваш Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-red-500"
+          placeholder="you@example.com"
+        />
+      </div>
+
+      <div>
+        <label className="block mb-2 font-medium">Сообщение</label>
+        <textarea
+          name="message"
+          required
+          rows="5"
+          className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-red-500"
+          placeholder="Ваше сообщение..."
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        className="px-6 py-3 rounded-lg bg-red-600 hover:bg-red-700 transition font-semibold"
+      >
+        Отправить
+      </button>
+    </form>
+  </div>
+</section>
+
       </main>
 
       {/* FOOTER */}
